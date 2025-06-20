@@ -1,0 +1,46 @@
+/* Basisinstellingen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Lexend Exa', sans-serif;
+}
+
+/* Achtergrondafbeelding */
+.background-image {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/background-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gecentreerde content */
+.intro-section {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Titel */
+.intro-title {
+  font-size: 24px;
+  font-weight: 200;
+  color: black;
+}
+
+/* Accentkleur voor keywords */
+.highlighted-keywords {
+  font-weight: 500;
+  color: #6b5eff;
+}
