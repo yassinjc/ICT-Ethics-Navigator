@@ -25,12 +25,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // Fade-out subtekst
   setTimeout(() => {
     subText.classList.remove('visible');
-  }, 6000);
+  }, 5000);
 
   // Toon dropdown
   setTimeout(() => {
     dropdownSection.classList.add('visible');
-  }, 7000);
+  }, 6000);
 });
 
 

@@ -17,6 +17,10 @@ p {
   font-weight: 200;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 
 /* Achtergrondafbeelding */
@@ -346,4 +350,92 @@ strong {
 
 .circle-button.small-icon {
   background-size: 124px;
+}
+
+
+
+/* Definition Page */
+
+
+
+/* Navigation Bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 40px 0;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 1;
+  position: relative;
+  padding-top: 50px;
+}
+
+.nav-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 3;
+}
+
+.left-topics ul,
+.right-topics ul {
+  display: flex;
+  gap: 100px;
+  font-size: 16px;
+  font-weight: 300;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 28px;
+}
+
+.center-principle {
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.principle-name {
+  font-weight: 500;
+  font-size: 22px;
+  color: #6b5eff;
+  margin-bottom: 10px;
+}
+
+.principle-name i {
+  font-size: 16px;
+}
+
+
+
+/* Progress Bar */
+.progress-tracker {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #cccccc86;
+  border-radius: 50%;
+}
+
+.dot.filled {
+  background-color: #6b5eff;
+}
+
+.topic-links li.active {
+  color: #6b5eff;
+  font-weight: 500;
+  border-bottom: 2px solid #6b5eff;
 }
