@@ -108,7 +108,6 @@ strong {
   margin-top: 20px;
   text-align: center;
   max-width: 560px;
-  margin: 0 auto;
 }
 
 .dropdown-section p {
@@ -355,7 +354,154 @@ strong {
 
 
 /* Definition Page */
+.definition-section {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 30px;
+  flex-wrap: wrap;
+}
 
+.definition-left,
+.definition-right {
+  flex: 1;
+}
+
+.definition-right {
+  margin-right: -130px;
+  margin-top: 43px;
+}
+
+.definition-left {
+  margin-left: -50px;
+  padding-right: 100px;
+}
+
+.definition-title {
+  font-size: 50px;
+  color: #6b5eff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.definition-left p {
+  color: black;
+  margin-bottom: 16px;
+}
+
+.definition-left strong {
+  font-weight: 400;
+}
+
+.definition-image {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 70px;
+  margin-left: 60px;
+}
+
+.definition-checklist p {
+  margin-bottom: 14px;
+}
+
+.definition-section strong {
+  font-weight: 400;
+}
+
+.definition-checklist ul,
+.definition-note ul {
+  padding: 0;
+  margin: 0;
+}
+
+.definition-checklist li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 2rem;
+  font-weight: 300;
+  width: 500px;
+}
+
+.definition-checklist li i {
+  margin-right: 10px;
+  color: black;
+}
+
+.definition-note {
+  margin-top: 100px;
+}
+
+.definition-note p {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.choice-list li {
+  margin-bottom: 8px;
+  font-weight: 300;
+  list-style: disc;
+  margin-left: 57px;
+}
+
+.info-icon {
+  width: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.definition-right li {
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+  margin-left: 35px;
+}
+
+li .icon {
+  flex-shrink: 0;
+  font-size: 16px;
+  color: #000;
+  margin-top: 2px;
+}
+
+li .text {
+  flex: 1;
+  line-height: 1.1rem;
+}
+
+.ensure-heading,
+.ensure-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.ensure-heading .icon,
+.ensure-list .icon {
+  flex-shrink: 0;
+  font-size: 16px;
+  color: #6b5eff;
+  margin-top: 2px;
+}
+
+.ensure-heading .text,
+.ensure-list .text {
+  flex: 1;
+}
+
+.ensure-heading .text {
+  font-weight: 200;
+}
+
+.ensure-heading .icon {
+  margin-top: 12px;
+  margin-right: 5px;
+  font-size: 20px;
+}
 
 
 /* Navigation Bar */
@@ -371,6 +517,10 @@ strong {
   padding-top: 50px;
 }
 
+.top-nav li {
+  list-style: none;
+}
+
 .nav-column {
   display: flex;
   flex-direction: column;
@@ -384,7 +534,6 @@ strong {
   gap: 100px;
   font-size: 16px;
   font-weight: 300;
-  list-style: none;
   padding: 0;
   margin: 0;
   margin-top: 28px;
