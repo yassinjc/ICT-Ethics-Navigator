@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Achtergrond met afbeelding -->
+    <!-- Achtergrond -->
     <div class="background-image">
 
         <!-- Introductiecontainer -->
@@ -22,12 +23,54 @@
                 Start Your <span class="highlighted-keywords">Ethical Journey</span>
             </h1>
 
+            <!-- Subtekst die tijdelijk verschijnt -->
             <p class="sub-intro-text">
                 Not sure where to begin?<br>
                 <strong>Don't worry</strong> — we'll guide you <span class="highlighted-keywords">step by step</span>.
             </p>
 
+            <!-- Dropdown die verschijnt nadat subtekst verdwijnt -->
+            <div class="dropdown-section">
+                <p class="dropdown-intro">
+                    Choose an <strong>ethical principle</strong> you want to <span
+                        class="highlighted-keywords">explore</span>.
+                </p>
+
+                <div class="custom-dropdown">
+                    <div class="dropdown-selected">
+                        <div class="dropdown-label">
+                            <span class="selected-text">Select a principle</span>
+                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                        </div>
+                    </div>
+                    <ul class="dropdown-options">
+                        <li class="opt-purple">Autonomy</li>
+                        <li class="opt-blue">Justice</li>
+                        <li class="opt-green">Beneficence & Non-Maleficence</li>
+                        <li class="opt-red">Accountability & Transparency</li>
+                        <li class="opt-yellow">Confidentiality & Privacy</li>
+                    </ul>
+                </div>
+
+                <p class="dropdown-followup">
+                    Each one comes with clear <strong>examples</strong>, <strong>tips</strong>, and
+                    <strong>tools</strong> to help you <span class="highlighted-keywords">apply it in your
+                        project</span>.
+                </p>
+
+                <!-- Verstopte knop die zichtbaar wordt na selectie -->
+                <a href="#" class="explore-button hidden">
+                    Start exploring this principle
+                    <i class="fa-solid fa-chevron-right chevron-right"></i>
+                </a>
+
+            </div>
+
+
+
         </div>
+
+
 
     </div>
 
