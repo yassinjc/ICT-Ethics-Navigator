@@ -745,3 +745,63 @@ li .text {
 .bad-example .sub-note {
   margin-bottom: 10px;
 }
+
+
+
+/* Why It Matters Page */
+.why-section {
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 40px;
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.why-title {
+  font-size: 50px;
+  color: #6b5eff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.why-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.why-left,
+.why-right {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.why-left {
+  margin-right: 50px;
+}
+
+.why-left ul,
+.why-right ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.why-left strong,
+.why-right strong {
+  font-weight: 400;
+}
+
+.why-visual {
+  text-align: center;
+}
+
+.why-visual img {
+  width: 1000px;
+  height: auto;
+}
