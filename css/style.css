@@ -1029,3 +1029,36 @@ li .text {
 .wide-popup {
   max-width: 1000px;
 }
+
+
+
+/* Documents Preview Page */
+.document-preview {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.preview-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #6b5eff;
+  margin-bottom: 30px;
+}
+
+.iframe-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.preview-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
