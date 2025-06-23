@@ -61,3 +61,15 @@ options.forEach(option => {
     exploreButton.classList.remove('hidden');
   });
 });
+
+
+// Open Document Pop-up
+function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+    document.getElementById("popupOverlay").style.display = "block";
+}
+
+function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+    document.getElementById("popupOverlay").style.display = "none";
+}

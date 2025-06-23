@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supporting Documents - Autonomy</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Achtergrond -->
+    <div class="background-image"></div>
+
+    <!-- Navigatiebalk -->
+    <nav class="top-nav">
+        <div class="nav-column left-topics">
+            <ul class="topic-links">
+                <a href="/pages/definition-autonomy.html">
+                    <li>Definition</li>
+                </a>
+                <a href="/pages/why-it-matters-autonomy.html">
+                    <li>Why It Matters</li>
+                </a>
+                <a href="/pages/examples-autonomy.html">
+                    <li>Examples</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="nav-column center-principle">
+            <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+            <div class="progress-tracker">
+                <span>You've explored 4/6 topics</span>
+                <div class="dots">
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-column right-topics">
+            <ul class="topic-links">
+                <a href="/pages/documents-autonomy.html">
+                    <li class="active">Documents</li>
+                </a>
+                <li>FAQ</li>
+                <li>Test Yourself</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Supporting Documents Content -->
+    <div class="documents-section">
+        <h1 class="documents-title">Supporting Documents</h1>
+
+        <div class="document-cards">
+            <div class="doc-card">
+                <img src="/assets/icons/consent-template-icon.svg" alt="Consent icon" class="doc-icon-consent">
+                <h2>Informed Consent Form Template</h2>
+                <p>For clear and simple data consent.</p>
+                <a href="#" class="view-button" onclick="openPopup('popupWindow')">View</a>
+            </div>
+
+            <div class="doc-card">
+                <img src="/assets/icons/gdpr-icon.svg" alt="GDPR icon" class="doc-icon">
+                <h2>GDPR Overview</h2>
+                <p>An introduction to European data protection rules</p>
+                <a href="#" class="view-button" onclick="openPopup('popupGDPR')">View</a>
+            </div>
+
+            <div class="doc-card">
+                <img src="/assets/icons/data-plan-icon.svg" alt="Data icon" class="doc-icon">
+                <h2>Data Management Plan Template</h2>
+                <p>For clear and ethical data planning.</p>
+                <a href="#" class="view-button" onclick="openPopup('popupDataPlan')">View</a>
+            </div>
+        </div>
+
+        <div class="documents-text">
+            <p>
+                These documents <strong>aren't just handy</strong> — they're often required to make sure your project
+                <strong>meets ethical standards</strong>.
+            </p>
+            <br>
+            <p>
+                Whether you're <strong>collecting data</strong>, <strong>working with users</strong>, or
+                <strong>planning a study</strong>, tools like consent forms and checklists help you stay
+                <strong>compliant</strong> and <strong>transparent</strong>.
+            </p>
+        </div>
+    </div>
+
+    <!-- Informed Consent Template Popup -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+
+    <div class="popup-container" id="popupWindow">
+        <span class="popup-close" onclick="closePopup('popupWindow')">x</span>
+        <div class="popup-content">
+            <div class="popup-header">
+                <img src="/assets/icons/consent-template-icon.svg" class="popup-icon" alt="icon">
+                <h2>Informed Consent Form Template</h2>
+            </div>
+            <p class="popup-subtitle">A short form to let participants know <strong>what you're <br> collecting,
+                    why</strong>, and <strong>what their rights are</strong>.</p>
+
+            <h3>Why this matters:</h3>
+            <br>
+            <div class="popup-description">
+                <p>Collecting personal data <strong>without consent</strong> can cause <strong>trust issues</strong>
+                    <br> and
+                    <strong>violate privacy laws</strong>.
+                </p>
+                <br>
+                <p>Using a <strong>clear, short form</strong> helps your participants feel <strong>informed <br> and
+                        respected</strong> — and keeps your project <strong>ethically sound</strong>.</p>
+            </div>
+            <br>
+            <div class="popup-buttons">
+                <a href="#" class="popup-btn filled">Download PDF</a>
+                <a href="#" class="popup-btn outlined">Preview Online</a>
+            </div>
+            <br>
+            <p class="popup-tip">
+                <i class="fas fa-info-circle" style="color: gray; margin-right: 5px;"></i>
+                Tip: You can adjust this form to match your project. Just keep it clear, honest and respectful.
+            </p>
+        </div>
+    </div>
+
+    <!-- GDPR Overview Popup -->
+    <div class="popup-container wide-popup" id="popupGDPR">
+        <span class="popup-close" onclick="closePopup('popupGDPR')">x</span>
+        <div class="popup-content">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <img src="/assets/icons/gdpr-icon.svg" class="popup-icon" style="width: 30px; margin: 0;" alt="icon">
+                <h2 style="margin: 0;">GDPR Overview</h2>
+            </div>
+            <br>
+            <p class="popup-subtitle">
+                A full overview of <strong>what the GDPR means</strong> for your <br> project and how to <strong>stay
+                    compliant</strong>.
+            </p>
+
+            <h3>Why this matters:</h3>
+            <br>
+            <div class="popup-description">
+                <p>
+                    The <strong>General Data Protection Regulation</strong> (GDPR) is a <strong>European privacy
+                        law</strong> that
+                    <strong>protects people's personal data</strong>.
+                </p>
+                <br>
+                <p>
+                    If you're <strong>collecting or using any personal information</strong> (like names, emails, or
+                    behavior tracking),
+                    <strong>the GDPR applies</strong> — even for school or research projects.
+                </p>
+                <br>
+                <p>
+                    Following GDPR <strong>helps you stay legally compliant, protect participants' rights</strong> and
+                    <strong>build trust</strong> with users or testers.
+                </p>
+            </div>
+            <br>
+            <div class="popup-buttons">
+                <a href="#" class="popup-btn filled">View Overview</a>
+            </div>
+            <br>
+            <p class="popup-tip">
+                <i class="fas fa-info-circle" style="color: gray; margin-right: 5px;"></i>
+                Tip: If you're not sure whether GDPR applies — assume it does. This guide helps you get the basics
+                right.
+            </p>
+        </div>
+    </div>
+
+    <!-- Data Management Plan Popup -->
+    <div class="popup-container wide-popup" id="popupDataPlan">
+        <span class="popup-close" onclick="closePopup('popupDataPlan')">x</span>
+        <div class="popup-content">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <img src="/assets/icons/data-plan-icon.svg" class="popup-icon" style="width: 30px; margin: 0;"
+                    alt="icon">
+                <h2 style="margin: 0;">Data Management Plan Template</h2>
+            </div>
+            <br>
+            <p class="popup-subtitle">
+                A <strong>simple template</strong> to help you <strong>define what data</strong> you<br>
+                collect, why you need it, and how you'll handle it.
+            </p>
+
+            <h3>Why this matters:</h3>
+            <br>
+            <div class="popup-description">
+                <p>
+                    Collecting and managing data without a <strong>clear plan</strong> is one of the <strong>most common
+                        ethical mistakes</strong> in ICT projects. <br> <br> This template helps you <strong>think ahead</strong>
+                    — to only collect what you truly need, keep it secure, and <strong>explain your choices</strong> if
+                    asked.
+                </p>
+                <br>
+                <p>
+                    A clear plan = <strong>better transparency</strong>, <strong>less risk</strong>, and
+                    <strong>smoother ethics approval</strong>.
+                </p>
+            </div>
+            <br>
+            <div class="popup-buttons">
+                <a href="#" class="popup-btn filled">Download PDF</a>
+                <a href="#" class="popup-btn outlined">Preview Online</a>
+            </div>
+            <br>
+            <p class="popup-tip">
+                <i class="fas fa-info-circle" style="color: gray; margin-right: 5px;"></i>
+                Tip: Fill this in before you start collecting data — it's easier to fix mistakes early than clean them
+                up later.
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
