@@ -1363,3 +1363,159 @@ li .text {
   background-color: #6b5eff;
   color: white;
 }
+
+
+
+/* Contact Us Page */
+.contact-wrapper {
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #6b5eff;
+  margin-bottom: 50px;
+  margin-left: -80px;
+}
+
+.contact-content {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Formulier */
+.contact-form-container {
+  flex: 1;
+  margin-right: 60px;
+  max-width: 400px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  font-size: 15px;
+  font-family: 'Lexend Exa', sans-serif;
+  background: #fff;
+  resize: none;
+}
+
+.contact-submit {
+  background-color: #6b5eff;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 26px;
+  font-family: 'Lexend Exa', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: fit-content;
+}
+
+.contact-submit:hover {
+  background-color: #6b5eff;
+}
+
+/* Info & Tekst */
+.contact-info {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact-info h2 {
+  font-size: 22px;
+  font-weight: 300;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.contact-info h2 strong {
+  font-weight: 400;
+  color: #000;
+}
+
+.contact-info p {
+  color: black;
+  margin-bottom: 15px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+/* Contactgegevens */
+.contact-details {
+  margin-top: 30px;
+}
+
+.contact-details p {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: 500;
+}
+
+.contact-details i {
+  color: #6b5eff;
+  font-size: 18px;
+}
+
+
+
+/*Contact Us Icon*/
+.contact-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: transparent;
+  color: #6b5eff;
+  font-size: 15px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: none;
+  z-index: 999;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Lexend Exa', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #6b5eff;
+  color: white;
+  transform: translateY(-2px);
+}

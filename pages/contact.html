@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Why It Matters - Autonomy</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,11 +16,6 @@
     <!-- Achtergrond -->
     <div class="background-image"></div>
 
-    <!-- Contact Us Knop -->
-    <a href="/pages/contact.html" class="contact-button" title="Contact us">
-        <i class="fas fa-phone"></i>
-    </a>
-
     <!-- Navigatiebalk -->
     <nav class="top-nav">
         <div class="nav-column left-topics">
@@ -29,7 +24,7 @@
                     <li>Definition</li>
                 </a>
                 <a href="/pages/why-it-matters-autonomy.html">
-                    <li class="active">Why It Matters</li>
+                    <li>Why It Matters</li>
                 </a>
                 <a href="/pages/examples-autonomy.html">
                     <li>Examples</li>
@@ -40,10 +35,10 @@
         <div class="nav-column center-principle">
             <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
             <div class="progress-tracker">
-                <span>You've explored 2/6 topics</span>
+                <span>You've explored 1/6 topics</span>
                 <div class="dots">
-                    <span class="dot filled"></span>
-                    <span class="dot filled"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -67,49 +62,48 @@
         </div>
     </nav>
 
-    <!-- Why It Matters Content -->
-    <div class="why-section">
-        <h1 class="why-title">Why It Matters</h1>
+    <!-- Contact Us Content -->
+    <div class="contact-wrapper">
+        <h1 class="contact-title">Contact Us</h1>
 
-        <div class="why-content">
-            <div class="why-left">
-                <p>
-                    Respecting autonomy is <strong>not just a rule</strong> — it's about <strong>treating people with
-                        respect</strong>.
-                </p>
-                <br>
-                <p>
-                    When people understand what's happening and get to make <strong>their own decisions</strong>, they
-                    feel:
-                </p>
-                <ul>
-                    <li>more <strong>comfortable</strong></li>
-                    <li>more <strong>in control</strong></li>
-                    <li>and more <strong>willing to participate</strong></li>
-                </ul>
+        <div class="contact-content">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name..." required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email address..." required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Type your message..." rows="5"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit">Send Message</button>
+                </form>
             </div>
 
-            <div class="why-right">
-                <p>
-                    Real impact of <strong>ignoring autonomy</strong>:
-                </p>
-                <ul>
-                    <li>A participant may <strong>drop out</strong> of your study.</li>
-                    <li>A user may <strong>stop using your product</strong>.</li>
-                    <li>Someone might <strong>file a complaint</strong> or <strong>report your project</strong>.</li>
-                </ul>
-                <br>
-                <p>
-                    Small ethical mistakes can lead to <strong>bigger consequences</strong> than you might expect.
-                </p>
-            </div>
-        </div>
+            <!-- Info and Contact Details -->
+            <div class="contact-info">
+                <h2>Got <strong>questions</strong> or <strong>feedback</strong>?</h2>
+                <p>We're here to help you navigate ethics in your research or project.</p>
+                <p>Whether you have a suggestion, found an issue, or just want to share your experience — we'd love to
+                    hear from you.</p>
 
-        <div class="why-visual">
-            <img src="/assets/images/informed-vs-skip-image.png" alt="">
+                <div class="contact-details">
+                    <p><i class="fa-solid fa-envelope"></i> exampleemail@email.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +31 6 123456789</p>
+                </div>
+            </div>
         </div>
     </div>
-
 
 
 
