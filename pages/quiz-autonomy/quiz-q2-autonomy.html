@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Yourself- Question 2 - Autonomy</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-image"></div>
+
+    <!-- Navigatiebalk -->
+    <nav class="top-nav">
+        <div class="nav-column left-topics">
+            <ul class="topic-links">
+                <a href="/pages/definition-autonomy.html">
+                    <li>Definition</li>
+                </a>
+                <a href="/pages/why-it-matters-autonomy.html">
+                    <li>Why It Matters</li>
+                </a>
+                <a href="/pages/examples-autonomy.html">
+                    <li>Examples</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="nav-column center-principle">
+            <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+            <div class="progress-tracker">
+                <span>You've explored <span class="highlight blue">all topics!</span></span>
+                <div class="dots">
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-column right-topics">
+            <ul class="topic-links">
+                <a href="/pages/documents-autonomy.html">
+                    <li>Documents</li>
+                </a>
+                <a href="/pages/faq-autonomy.html">
+                    <li>FAQ</li>
+                </a>
+                <a href="/pages/quiz-autonomy/quiz-q1-autonomy.html">
+                    <li class="active">Test Yourself</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Quiz Content -->
+    <div class="quiz-wrapper">
+        <h1 class="quiz-title">Test Yourself</h1>
+
+        <!-- Progress bar -->
+        <div class="progress-wrapper">
+            <div class="progress-indicator active" style="left: 25%;">25%</div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 25%;"></div>
+            </div>
+        </div>
+
+        <!-- Question -->
+        <div class="quiz-question-block">
+            <div class="question-left">
+                <p class="quiz-question">
+                    You need user emails for login purposes. <br>
+                    What's the most ethical way to ask?
+                </p>
+
+                <div class="quiz-options">
+                    <button class="quiz-option" data-correct="false">
+                        <span class="letter">A</span>
+                        <span class="option-text">Pre-fill the field and submit it when they click
+                            “Next”.</span>
+                    </button>
+                    <div class="feedback-text" style="display: none;">
+                        ❌ Not quite. Pre-filling and auto-submitting skips the user's right to choose — that's not informed consent.
+                    </div>
+
+                    <button class="quiz-option" data-correct="false">
+                        <span class="letter">B</span>
+                        <span class="option-text">Collect them and store securely — no need to
+                            explain.</span>
+                    </button>
+                    <div class="feedback-text" style="display: none;">
+                        ❌ Almost. Storing data securely is great, but it's not enough — people need to know why and give permission first.
+                    </div>
+
+                    <button class="quiz-option" data-correct="true">
+                        <span class="letter">C</span>
+                        <span class="option-text">Ask for consent and explain how the email will
+                            be used.</span>
+                    </button>
+                    <div class="feedback-text" style="display: none;">
+                        ✅ Correct! Asking for consent and explaining usage supports transparency and respects participant autonomy.
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-right">
+                <img src="/assets/images/quiz-image.png" alt="quiz illustration" id="quiz-image">
+            </div>
+        </div>
+
+        <div class="continue-wrapper" style="display: none;">
+            <button class="continue-button">Continue</button>
+        </div>
+    </div>
+
+    <script src="/js/quiz-q2.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Yourself- Question 1 - Autonomy</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-image"></div>
+
+    <!-- Navigatiebalk -->
+    <nav class="top-nav">
+        <div class="nav-column left-topics">
+            <ul class="topic-links">
+                <a href="/pages/definition-autonomy.html">
+                    <li>Definition</li>
+                </a>
+                <a href="/pages/why-it-matters-autonomy.html">
+                    <li>Why It Matters</li>
+                </a>
+                <a href="/pages/examples-autonomy.html">
+                    <li>Examples</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="nav-column center-principle">
+            <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+            <div class="progress-tracker">
+                <span>You've explored <span class="highlight blue">all topics!</span></span>
+                <div class="dots">
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-column right-topics">
+            <ul class="topic-links">
+                <a href="/pages/documents-autonomy.html">
+                    <li>Documents</li>
+                </a>
+                <a href="/pages/faq-autonomy.html">
+                    <li>FAQ</li>
+                </a>
+                <a href="/pages/quiz-autonomy/quiz-q1-autonomy.html">
+                    <li class="active">Test Yourself</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Quiz Content -->
+    <div class="quiz-wrapper">
+        <h1 class="quiz-title">Test Yourself</h1>
+
+        <!-- Progress bar -->
+        <div class="progress-wrapper">
+            <div class="progress-indicator">0%</div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Question -->
+        <div class="quiz-question-block">
+            <div class="question-left">
+                <p class="quiz-question">
+                    You built a tool and want students to test it.
+                    What should you do before collecting their thoughts?
+                </p>
+
+                <div class="quiz-options">
+                    <button class="quiz-option" data-correct="false">
+                        <span class="letter">A</span>
+                        <span class="option-text">Just let them start — it's a school project, not real research.</span>
+                    </button>
+                    <div class="feedback-text" style="display: none;">
+                        ❌ Not quite. School projects still involve real people and personal input. You need to ask
+                        first.
+                    </div>
+
+                    <button class="quiz-option" data-correct="true">
+                        <span class="letter">B</span>
+                        <span class="option-text">Mention they're helping, and ask if it's okay to collect
+                            feedback.</span>
+                    </button>
+                    <div class="feedback-text" style="display: none;">
+                        ✅ Correct! Even in informal settings, asking for consent shows respect and protects their
+                        autonomy.
+                    </div>
+
+                    <button class="quiz-option" data-correct="false">
+                        <span class="letter">C</span>
+                        <span class="option-text">Add a “Continue” button to imply consent.</span>
+                    </button>
+                    <div class="feedback-text" style="display: none;">
+                        ❌ Not quite. Consent should be clear and explicit, not implied through interface design.
+                    </div>
+                </div>
+
+                <div class="continue-wrapper" style="display: none;">
+                    <button class="continue-button">Continue</button>
+                </div>
+            </div>
+
+            <div class="question-right">
+                <img id="quiz-image" src="/assets/images/quiz-image.png" alt="quiz illustration">
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/quiz-q1.js"></script>
+</body>
+
+</html>

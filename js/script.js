@@ -1,13 +1,16 @@
-// JavaScript voor fade-in effect
-window.addEventListener('DOMContentLoaded', () => {
-    const subText = document.querySelector('.sub-intro-text');
-    const introSection = document.querySelector('.intro-section');
+console.log("script.js is geladen!");
 
-    // Wacht 1.5 seconden en voeg class 'visible' toe om fade-in te activeren
-    setTimeout(() => {
-        subText.classList.add('visible');
-        introSection.classList.add('shift-down'); // schuift intro iets omhoog
-    }, 1500);
+
+// JavaScript voor Introductie fade-in effect
+window.addEventListener('DOMContentLoaded', () => {
+  const subText = document.querySelector('.sub-intro-text');
+  const introSection = document.querySelector('.intro-section');
+
+  // Wacht 1.5 seconden en voeg class 'visible' toe om fade-in te activeren
+  setTimeout(() => {
+    subText.classList.add('visible');
+    introSection.classList.add('shift-down'); // schuift intro iets omhoog
+  }, 1500);
 });
 
 
@@ -65,11 +68,11 @@ options.forEach(option => {
 
 // Open Document Pop-up
 function openPopup(id) {
-    document.getElementById(id).style.display = "block";
-    document.getElementById("popupOverlay").style.display = "block";
+  document.getElementById(id).style.display = "block";
+  document.getElementById("popupOverlay").style.display = "block";
 }
 
 function closePopup(id) {
-    document.getElementById(id).style.display = "none";
-    document.getElementById("popupOverlay").style.display = "none";
+  document.getElementById(id).style.display = "none";
+  document.getElementById("popupOverlay").style.display = "none";
 }

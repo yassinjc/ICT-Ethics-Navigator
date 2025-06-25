@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Yourself- Question 3 - Autonomy</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-image"></div>
+
+    <!-- Navigatiebalk -->
+    <nav class="top-nav">
+        <div class="nav-column left-topics">
+            <ul class="topic-links">
+                <a href="/pages/definition-autonomy.html">
+                    <li>Definition</li>
+                </a>
+                <a href="/pages/why-it-matters-autonomy.html">
+                    <li>Why It Matters</li>
+                </a>
+                <a href="/pages/examples-autonomy.html">
+                    <li>Examples</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="nav-column center-principle">
+            <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+            <div class="progress-tracker">
+                <span>You've explored <span class="highlight blue">all topics!</span></span>
+                <div class="dots">
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                    <span class="dot filled"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-column right-topics">
+            <ul class="topic-links">
+                <a href="/pages/documents-autonomy.html">
+                    <li>Documents</li>
+                </a>
+                <a href="/pages/faq-autonomy.html">
+                    <li>FAQ</li>
+                </a>
+                <a href="/pages/quiz-autonomy/quiz-q1-autonomy.html">
+                    <li class="active">Test Yourself</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Quiz Content -->
+    <div class="quiz-wrapper">
+        <h1 class="quiz-title">Test Yourself</h1>
+
+        <!-- Progress bar -->
+        <div class="progress-wrapper">
+            <div class="progress-indicator active" style="left: 50%;">50%</div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%;"></div>
+            </div>
+        </div>
+
+        <!-- Question -->
+        <div class="quiz-question-block">
+            <div class="question-left">
+                <p class="quiz-question">
+                    A student joins your survey but later wants to withdraw.
+                    What should you do?
+                </p>
+
+                <div class="quiz-options">
+                    <button class="quiz-option" data-correct="true">
+                        <span class="letter">A</span>
+                        <span class="option-text">Remove their answers immediately, without
+                            making it complicated</span>
+                    </button>
+                    <div class="feedback-text" style="display: none;">
+                        ✅ Correct! If someone withdraws consent, you should remove their data without making it hard —
+                        that's how you respect their autonomy.
+                    </div>
+
+
+                    <button class="quiz-option" data-correct="false">
+                        <span class="letter">B</span>
+                        <span class="option-text">Keep their answers anyway — it's already done</span>
+                    </button>
+                    <div class="feedback-text" style="display: none;">
+                        ❌ Not quite. Once someone withdraws consent, keeping their data goes against ethical research
+                        and privacy rights.
+                    </div>
+
+                    <button class="quiz-option" data-correct="false">
+                        <span class="letter">C</span>
+                        <span class="option-text">Check-in with your teacher/stakeholder, and
+                            ask for permission</span>
+                    </button>
+                    <div class="feedback-text" style="display: none;">
+                        ❌ Close, but not enough. Respecting autonomy means acting on the participant's request directly
+                        — not passing it up the chain.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="question-right">
+                <img src="/assets/images/quiz-image.png" alt="quiz illustration" id="quiz-image">
+            </div>
+        </div>
+
+        <div class="continue-wrapper" style="display: none;">
+            <button class="continue-button">Continue</button>
+        </div>
+    </div>
+
+    <script src="/js/quiz-q3.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
