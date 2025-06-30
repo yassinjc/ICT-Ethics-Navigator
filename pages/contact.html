@@ -13,11 +13,13 @@
 </head>
 
 <body>
-    <!-- Achtergrond -->
+    <!-- Background -->
     <div class="background-image"></div>
 
-    <!-- Navigatiebalk -->
+    <!-- Navigation Bar containing topics -->
     <nav class="top-nav">
+
+        <!-- Left column: First 3 Topics -->
         <div class="nav-column left-topics">
             <ul class="topic-links">
                 <a href="/pages/definition-autonomy.html">
@@ -32,8 +34,10 @@
             </ul>
         </div>
 
+        <!-- Center Column: Principle and Progress Bar -->
         <div class="nav-column center-principle">
             <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+
             <div class="progress-tracker">
                 <span>You've explored 1/6 topics</span>
                 <div class="dots">
@@ -47,6 +51,7 @@
             </div>
         </div>
 
+        <!-- Right Column: Last 3 Topics -->
         <div class="nav-column right-topics">
             <ul class="topic-links">
                 <a href="/pages/documents-autonomy.html">
@@ -62,12 +67,16 @@
         </div>
     </nav>
 
-    <!-- Contact Us Content -->
+    <!-- Main Content: Contact-Us -->
     <div class="contact-wrapper">
         <h1 class="contact-title">Contact Us</h1>
 
         <div class="contact-content">
-            <!-- Contact Form -->
+
+            <!--
+            Contact Form Section (currently non-functional)
+            You can connecct this form to Formspree, Netlify Forms, or a custom backend
+            -->
             <div class="contact-form-container">
                 <form class="contact-form">
                     <div class="form-group">
@@ -90,13 +99,18 @@
                 </form>
             </div>
 
-            <!-- Info and Contact Details -->
+            <!-- Info Section with Contact Details -->
             <div class="contact-info">
                 <h2>Got <strong>questions</strong> or <strong>feedback</strong>?</h2>
                 <p>We're here to help you navigate ethics in your research or project.</p>
                 <p>Whether you have a suggestion, found an issue, or just want to share your experience — we'd love to
-                    hear from you.</p>
+                    hear from you.
+                </p>
 
+                <!--
+                Static Contact Info
+                Fully replacable with real contact details 
+                -->
                 <div class="contact-details">
                     <p><i class="fa-solid fa-envelope"></i> exampleemail@email.com</p>
                     <p><i class="fa-solid fa-phone"></i> +31 6 123456789</p>
@@ -104,8 +118,6 @@
             </div>
         </div>
     </div>
-
-
 
     <script src="../js/script.js"></script>
 </body>

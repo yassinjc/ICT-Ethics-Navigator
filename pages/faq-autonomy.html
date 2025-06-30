@@ -13,16 +13,13 @@
 </head>
 
 <body>
-    <!-- Achtergrond -->
+    <!-- Background -->
     <div class="background-image"></div>
 
-    <!-- Contact Us Knop -->
-    <a href="/pages/contact.html" class="contact-button" title="Contact us">
-        <i class="fas fa-phone"></i>
-    </a>
-
-    <!-- Navigatiebalk -->
+    <!-- Navigation Bar containing topics -->
     <nav class="top-nav">
+
+        <!-- Left column: First 3 Topics -->
         <div class="nav-column left-topics">
             <ul class="topic-links">
                 <a href="/pages/definition-autonomy.html">
@@ -37,8 +34,10 @@
             </ul>
         </div>
 
+        <!-- Center Column: Principle and Progress Bar -->
         <div class="nav-column center-principle">
             <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+
             <div class="progress-tracker">
                 <span>You've explored 5/6 topics</span>
                 <div class="dots">
@@ -52,6 +51,7 @@
             </div>
         </div>
 
+        <!-- Right Column: Last 3 Topics -->
         <div class="nav-column right-topics">
             <ul class="topic-links">
                 <a href="/pages/documents-autonomy.html">
@@ -67,12 +67,29 @@
         </div>
     </nav>
 
-    <!-- Frequently Asked Questions Content -->
+    <!-- Contact Us Button -->
+    <a href="/pages/contact.html" class="contact-button" title="Contact us">
+        <i class="fas fa-phone"></i>
+    </a>
+
+
+    <!-- Main Content: Frequently Asked Questions -->
     <div class="faq-wrapper">
         <h1 class="faq-title">Frequently Asked Questions</h1>
 
         <div class="faq-grid">
 
+            <!-- 
+            FAQ Items are completely customizable:
+
+            - .faq-item-2 -> uses specific female avatar
+            - .faq-item -> uses specific male avatar
+
+            These are alternated for visual variation.
+            You can copy either one to add a new FAQ.
+            -->
+
+            <!-- FAQ Block 1 -->
             <div class="faq-item-2">
                 <img src="/assets/images/faq-1-image.png" />
                 <div class="faq-question-box">
@@ -85,6 +102,7 @@
                 </p>
             </div>
 
+            <!-- FAQ Block 2 -->
             <div class="faq-item">
                 <img src="/assets/images/faq-2-image.png" />
                 <div class="faq-question-box">
@@ -97,6 +115,7 @@
                 </p>
             </div>
 
+            <!-- FAQ Block 3 -->
             <div class="faq-item">
                 <img src="/assets/images/faq-2-image.png" />
                 <div class="faq-question-box">
@@ -108,6 +127,7 @@
                 </p>
             </div>
 
+            <!-- FAQ Block 4 -->
             <div class="faq-item-2">
                 <img src="/assets/images/faq-1-image.png" />
                 <div class="faq-question-box">
@@ -120,6 +140,7 @@
                 </p>
             </div>
 
+            <!-- FAQ Block 5 -->
             <div class="faq-item-2">
                 <img src="/assets/images/faq-1-image.png" />
                 <div class="faq-question-box">
@@ -132,6 +153,7 @@
                 </p>
             </div>
 
+            <!-- FAQ Block 6 -->
             <div class="faq-item">
                 <img src="/assets/images/faq-2-image.png" />
                 <div class="faq-question-box">
@@ -144,17 +166,14 @@
                     <strong>keep your explanation short, clear, and in plain language</strong>.
                 </p>
             </div>
+
+            <!-- Spacer -->
             <br>
             <br>
             <br>
 
         </div>
     </div>
-
-
-
-
-
 
     <script src="../js/script.js"></script>
 </body>

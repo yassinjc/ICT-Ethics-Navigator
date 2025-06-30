@@ -13,16 +13,13 @@
 </head>
 
 <body>
-    <!-- Achtergrond -->
+    <!-- Background -->
     <div class="background-image"></div>
 
-    <!-- Contact Us Knop -->
-    <a href="/pages/contact.html" class="contact-button" title="Contact us">
-        <i class="fas fa-phone"></i>
-    </a>
-
-    <!-- Navigatiebalk -->
+    <!-- Navigation Bar containing topics -->
     <nav class="top-nav">
+
+        <!-- Left column: First 3 Topics -->
         <div class="nav-column left-topics">
             <ul class="topic-links">
                 <a href="/pages/definition-autonomy.html">
@@ -37,8 +34,10 @@
             </ul>
         </div>
 
+        <!-- Center Column: Principle and Progress Bar -->
         <div class="nav-column center-principle">
             <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+
             <div class="progress-tracker">
                 <span>You've explored 4/6 topics</span>
                 <div class="dots">
@@ -52,6 +51,7 @@
             </div>
         </div>
 
+        <!-- Right Column: Last 3 Topics -->
         <div class="nav-column right-topics">
             <ul class="topic-links">
                 <a href="/pages/documents-autonomy.html">
@@ -67,11 +67,25 @@
         </div>
     </nav>
 
-    <!-- Supporting Documents Content -->
+    <!-- Contact-Us Button -->
+    <a href="/pages/contact.html" class="contact-button" title="Contact us">
+        <i class="fas fa-phone"></i>
+    </a>
+
+
+    <!-- Main Content: Supporting Documents -->
     <div class="documents-section">
         <h1 class="documents-title">Supporting Documents</h1>
 
+        <!-- 
+        Documents Cards:
+        Each .doc-card represents a document (template, overview, etc.)
+        The icon, title, description, and pop-up link can be adjusted easily.
+        New documents can be added by copying a .doc-card block and assigning a unique popup ID.
+        -->
         <div class="document-cards">
+
+            <!-- Document 1: Informed Consent -->
             <div class="doc-card">
                 <img src="/assets/icons/consent-template-icon.svg" alt="Consent icon" class="doc-icon-consent">
                 <h2>Informed Consent Form Template</h2>
@@ -79,6 +93,7 @@
                 <a href="#" class="view-button" onclick="openPopup('popupWindow')">View</a>
             </div>
 
+            <!-- Document 2: GDPR Overview -->
             <div class="doc-card">
                 <img src="/assets/icons/gdpr-icon.svg" alt="GDPR icon" class="doc-icon">
                 <h2>GDPR Overview</h2>
@@ -86,6 +101,7 @@
                 <a href="#" class="view-button" onclick="openPopup('popupGDPR')">View</a>
             </div>
 
+            <!-- Document 3: Data Plan Template -->
             <div class="doc-card">
                 <img src="/assets/icons/data-plan-icon.svg" alt="Data icon" class="doc-icon">
                 <h2>Data Management Plan Template</h2>
@@ -94,6 +110,7 @@
             </div>
         </div>
 
+        <!-- Description underneath the Document Cards -->
         <div class="documents-text">
             <p>
                 These documents <strong>aren't just handy</strong> — they're often required to make sure your project
@@ -108,21 +125,34 @@
         </div>
     </div>
 
-    <!-- Informed Consent Template Popup -->
+
+    <!--
+    Pop-ups:
+    Each pop-up is triggered via -> onclick="openPopup('popupID')"
+    Pop-ups can be duplicated and customized. Make sure each pop-up has a unique ID.
+    -->
+
+    <!-- Dark Overlay that appears behind Pop-ups once selected -->
     <div class="popup-overlay" id="popupOverlay"></div>
 
+    <!-- Popup 1: Informed Consent -->
     <div class="popup-container" id="popupWindow">
+
         <span class="popup-close" onclick="closePopup('popupWindow')">x</span>
+
         <div class="popup-content">
             <div class="popup-header">
                 <img src="/assets/icons/consent-template-icon.svg" class="popup-icon" alt="icon">
                 <h2>Informed Consent Form Template</h2>
             </div>
+
             <p class="popup-subtitle">A short form to let participants know <strong>what you're <br> collecting,
-                    why</strong>, and <strong>what their rights are</strong>.</p>
+                    why</strong>, and <strong>what their rights are</strong>.
+            </p>
 
             <h3>Why this matters:</h3>
             <br>
+
             <div class="popup-description">
                 <p>Collecting personal data <strong>without consent</strong> can cause <strong>trust issues</strong>
                     <br> and
@@ -133,11 +163,13 @@
                         respected</strong> — and keeps your project <strong>ethically sound</strong>.</p>
             </div>
             <br>
+
             <div class="popup-buttons">
                 <a href="/assets/documents/template-placeholder.pdf" class="popup-btn filled" download>Download PDF</a>
                 <a href="/pages/consent-template.html" class="popup-btn outlined" target="_blank">Preview Online</a>
             </div>
             <br>
+
             <p class="popup-tip">
                 <i class="fas fa-info-circle" style="color: gray; margin-right: 5px;"></i>
                 Tip: You can adjust this form to match your project. Just keep it clear, honest and respectful.
@@ -145,15 +177,18 @@
         </div>
     </div>
 
-    <!-- GDPR Overview Popup -->
+    <!-- Popup 2: GDPR Overview -->
     <div class="popup-container wide-popup" id="popupGDPR">
+
         <span class="popup-close" onclick="closePopup('popupGDPR')">x</span>
+
         <div class="popup-content">
             <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
                 <img src="/assets/icons/gdpr-icon.svg" class="popup-icon" style="width: 30px; margin: 0;" alt="icon">
                 <h2 style="margin: 0;">GDPR Overview</h2>
             </div>
             <br>
+
             <p class="popup-subtitle">
                 A full overview of <strong>what the GDPR means</strong> for your <br> project and how to <strong>stay
                     compliant</strong>.
@@ -161,6 +196,7 @@
 
             <h3>Why this matters:</h3>
             <br>
+
             <div class="popup-description">
                 <p>
                     The <strong>General Data Protection Regulation</strong> (GDPR) is a <strong>European<br>privacy
@@ -181,10 +217,12 @@
                 </p>
             </div>
             <br>
+
             <div class="popup-buttons">
                 <a href="https://gdpr.eu/what-is-gdpr/" class="popup-btn filled">View Overview</a>
             </div>
             <br>
+
             <p class="popup-tip">
                 <i class="fas fa-info-circle" style="color: gray; margin-right: 5px;"></i>
                 Tip: If you're not sure whether GDPR applies — assume it does. This guide helps you get the basics
@@ -193,9 +231,11 @@
         </div>
     </div>
 
-    <!-- Data Management Plan Popup -->
+    <!-- Popup 3: Data Management Plan -->
     <div class="popup-container wide-popup" id="popupDataPlan">
+
         <span class="popup-close" onclick="closePopup('popupDataPlan')">x</span>
+
         <div class="popup-content">
             <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
                 <img src="/assets/icons/data-plan-icon.svg" class="popup-icon" style="width: 30px; margin: 0;"
@@ -203,6 +243,7 @@
                 <h2 style="margin: 0;">Data Management Plan Template</h2>
             </div>
             <br>
+
             <p class="popup-subtitle">
                 A <strong>simple template</strong> to help you <strong>define what data</strong> you<br>
                 collect, why you need it, and how you'll handle it.
@@ -210,6 +251,7 @@
 
             <h3>Why this matters:</h3>
             <br>
+
             <div class="popup-description">
                 <p>
                     Collecting and managing data without a <strong>clear plan</strong> is<br>one of the <strong>most
@@ -227,11 +269,13 @@
                 </p>
             </div>
             <br>
+
             <div class="popup-buttons">
                 <a href="/assets/documents/template-placeholder.pdf" class="popup-btn filled" download>Download PDF</a>
                 <a href="/pages/data-template.html" class="popup-btn outlined" target="_blank">Preview Online</a>
             </div>
             <br>
+
             <p class="popup-tip">
                 <i class="fas fa-info-circle" style="color: gray; margin-right: 5px;"></i>
                 Tip: Fill this in before you start collecting data — it's easier to fix mistakes early than clean them
@@ -239,9 +283,6 @@
             </p>
         </div>
     </div>
-
-
-
 
     <script src="../js/script.js"></script>
 </body>

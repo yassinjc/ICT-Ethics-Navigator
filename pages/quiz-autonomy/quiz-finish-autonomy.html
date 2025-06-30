@@ -13,11 +13,13 @@
 </head>
 
 <body>
-    <!-- Achtergrond -->
+    <!-- Background -->
     <div class="background-image"></div>
 
-    <!-- Navigatiebalk -->
+    <!-- Navigation Bar containing topics -->
     <nav class="top-nav">
+
+        <!-- Left column: First 3 Topics -->
         <div class="nav-column left-topics">
             <ul class="topic-links">
                 <a href="/pages/definition-autonomy.html">
@@ -32,8 +34,10 @@
             </ul>
         </div>
 
+        <!-- Center Column: Principle and Progress Bar -->
         <div class="nav-column center-principle">
             <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+
             <div class="progress-tracker">
                 <span>You've explored <span class="highlight blue">all topics!</span></span>
                 <div class="dots">
@@ -47,6 +51,7 @@
             </div>
         </div>
 
+        <!-- Right Column: Last 3 Topics -->
         <div class="nav-column right-topics">
             <ul class="topic-links">
                 <a href="/pages/documents-autonomy.html">
@@ -62,11 +67,16 @@
         </div>
     </nav>
 
-    <!-- Quiz Content -->
+    <!-- Contact-Us Button -->
+    <a href="/pages/contact.html" class="contact-button" title="Contact us">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Main Quiz Wrapper -->
     <div class="quiz-wrapper">
         <h1 class="quiz-title">Test Yourself</h1>
 
-        <!-- Progress bar -->
+        <!-- Progress bar for current section -->
         <div class="progress-wrapper">
             <div class="progress-indicator active" style="left: 100%; background-color: #6b5eff; color: white;">100%
             </div>
@@ -75,7 +85,10 @@
             </div>
         </div>
 
-        <!-- Finish Text -->
+        <!--
+        Finish Block: Fully customizable.
+        Congratulatory text and summary can be fully customized.
+        -->
         <div class="quiz-question-block">
             <div class="quiz-finish">
                 <p class="quiz-question">
@@ -96,6 +109,7 @@
                 </div>
             </div>
 
+            <!-- Right Side: Avatar Illustration -->
             <div class="question-right">
                 <img id="quiz-image" src="/assets/images/quiz-image-happy.png" alt="happy quiz image">
             </div>

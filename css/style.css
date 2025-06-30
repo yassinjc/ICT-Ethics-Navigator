@@ -1,4 +1,4 @@
-/* Basisopmaak */
+/* Base Styling */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ a {
 
 
 
-/* Achtergrondafbeelding */
+/* Background Image */
 .background-image {
   position: fixed;
   width: 100%;
@@ -41,7 +41,7 @@ a {
 
 
 
-/* Introductiesectie */
+/* Introduction Section */
 .intro-section {
   position: absolute;
   top: 50%;
@@ -63,7 +63,6 @@ a {
   color: black;
   margin-top: 15px;
   line-height: 1.6;
-
   opacity: 0;
   visibility: hidden;
   max-height: 0;
@@ -78,17 +77,13 @@ a {
   transition: opacity 1s ease, max-height 0.6s ease;
 }
 
-.hidden {
-  opacity: 0;
-}
-
 .intro-section.shift-down {
   transform: translate(-50%, -60%);
 }
 
 
 
-/* Accentkleuren voor keywords */
+/* Accentcolors for Keywords */
 .highlighted-keywords {
   font-weight: 500;
   color: #6b5eff;
@@ -100,7 +95,7 @@ strong {
 
 
 
-/* Dropdown Sectie */
+/* Dropdown Section */
 .dropdown-section {
   opacity: 0;
   visibility: hidden;
@@ -175,7 +170,7 @@ strong {
 
 
 
-/* Dropdown Principles */
+/* Dropdown Options (Principles) */
 .dropdown-options {
   list-style: none;
   padding: 0;
@@ -200,7 +195,7 @@ strong {
   cursor: pointer;
 }
 
-/* Kleuren per Principle */
+/* Colors per Principle */
 .opt-purple {
   color: #8a4dff;
 }
@@ -221,7 +216,7 @@ strong {
   color: #f5b70b;
 }
 
-/* Knop die onder dropdown verschijnt */
+/* Explore Button, appears after Selection */
 .explore-button {
   display: block;
   margin-top: 20px;
@@ -290,7 +285,7 @@ strong {
 
 
 
-/* Onderwerpen */
+/* Topics */
 .circle-button {
   width: 210px;
   height: 210px;
@@ -325,7 +320,7 @@ strong {
     inset 12px -12px 20px rgba(107, 94, 255, 0.2);
 }
 
-/* Onderwerpen Icons */
+/* Topic Icons */
 .icon-definition {
   background-image: url('../assets/icons/definition-icon.svg');
 }
@@ -911,7 +906,6 @@ li .text {
 }
 
 
-
 /* Document Pop-ups */
 .popup-overlay {
   position: fixed;
@@ -1151,7 +1145,7 @@ li .text {
 
 
 
-/* Scrollbar */
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -1391,7 +1385,7 @@ li .text {
   align-items: flex-start;
 }
 
-/* Formulier */
+/* Contact Form */
 .contact-form-container {
   flex: 1;
   margin-right: 60px;
@@ -1442,7 +1436,7 @@ li .text {
   background-color: #6b5eff;
 }
 
-/* Info & Tekst */
+/* Info & Text */
 .contact-info {
   flex: 1;
   max-width: 500px;
@@ -1471,7 +1465,7 @@ li .text {
   line-height: 1.5;
 }
 
-/* Contactgegevens */
+/* Contact Details */
 .contact-details {
   margin-top: 30px;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Real-Life Examples - Autonomy</title>
+    <title>Scenario Examples - Autonomy</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,16 +13,13 @@
 </head>
 
 <body>
-    <!-- Achtergrond -->
+    <!-- Background -->
     <div class="background-image"></div>
 
-    <!-- Contact Us Knop -->
-    <a href="/pages/contact.html" class="contact-button" title="Contact us">
-        <i class="fas fa-phone"></i>
-    </a>
-
-    <!-- Navigatiebalk -->
+    <!-- Navigation Bar containing topics -->
     <nav class="top-nav">
+
+        <!-- Left column: First 3 Topics -->
         <div class="nav-column left-topics">
             <ul class="topic-links">
                 <a href="/pages/definition-autonomy.html">
@@ -37,8 +34,10 @@
             </ul>
         </div>
 
+        <!-- Center Column: Principle and Progress Bar -->
         <div class="nav-column center-principle">
             <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+
             <div class="progress-tracker">
                 <span>You've explored 3/6 topics</span>
                 <div class="dots">
@@ -52,6 +51,7 @@
             </div>
         </div>
 
+        <!-- Right Column: Last 3 Topics -->
         <div class="nav-column right-topics">
             <ul class="topic-links">
                 <a href="/pages/documents-autonomy.html">
@@ -67,10 +67,20 @@
         </div>
     </nav>
 
-    <!-- Examples Content -->
-    <div class="examples-section">
-        <h1 class="examples-title">Real-Life Examples</h1>
+    <!-- Contact-Us Button -->
+    <a href="/pages/contact.html" class="contact-button" title="Contact us">
+        <i class="fas fa-phone"></i>
+    </a>
 
+
+    <!-- Main Content: Scenario Example, Good Practice -->
+    <div class="examples-section">
+        <h1 class="examples-title">Scenario Examples</h1>
+
+        <!--
+        This block shows a "good practice" scenario
+        The content, name, image and results are fully customizable.
+        -->
         <div class="example-content">
             <div class="example-illustration">
                 <img src="/assets/images/lisa-image.png">
@@ -97,6 +107,10 @@
             </div>
         </div>
 
+        <!--
+        Results Box explaining consequences
+        This is editable: change the bullet points to match specific scenario
+        -->
         <div class="example-results-box">
             <p><span class="results-label">Results:</span></p>
             <ul>
@@ -107,14 +121,11 @@
             </ul>
         </div>
 
+        <!-- Navigation arrow to next example -->
         <a href="/pages/examples-bad-autonomy.html" class="next-example-arrow">
             <i class="fa fa-chevron-right"></i>
         </a>
     </div>
-
-
-
-
 
     <script src="../js/script.js"></script>
 </body>

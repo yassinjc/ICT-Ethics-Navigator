@@ -13,17 +13,13 @@
 </head>
 
 <body>
-    <!-- Achtergrond -->
+    <!-- Background -->
     <div class="background-image"></div>
 
-    <!-- Contact Us Knop -->
-    <a href="/pages/contact.html" class="contact-button" title="Contact us">
-        <i class="fas fa-phone"></i>
-    </a>
-
-
-    <!-- Navigatiebalk -->
+    <!-- Navigation Bar containing topics -->
     <nav class="top-nav">
+
+        <!-- Left column: First 3 Topics -->
         <div class="nav-column left-topics">
             <ul class="topic-links">
                 <a href="/pages/definition-autonomy.html">
@@ -38,8 +34,10 @@
             </ul>
         </div>
 
+        <!-- Center Column: Principle and Progress Bar -->
         <div class="nav-column center-principle">
             <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+
             <div class="progress-tracker">
                 <span>You've explored 1/6 topics</span>
                 <div class="dots">
@@ -53,6 +51,7 @@
             </div>
         </div>
 
+        <!-- Right Column: Last 3 Topics -->
         <div class="nav-column right-topics">
             <ul class="topic-links">
                 <a href="/pages/documents-autonomy.html">
@@ -68,10 +67,19 @@
         </div>
     </nav>
 
-    <!-- Definition Content -->
+    <!-- Contact-Us Button -->
+    <a href="/pages/contact.html" class="contact-button" title="Contact us">
+        <i class="fas fa-phone"></i>
+    </a>
+
+
+    <!-- Main Content: Autonomy Definition -->
     <section class="definition-section">
 
-        <!-- Linker Definition Content -->
+        <!--
+        Left Side: Main Explanation Text + Illustration
+        You can easily swap out the paragraphs and image to match a different principle.
+        -->
         <div class="definition-left">
             <h1 class="definition-title">Definition</h1>
             <p>
@@ -85,7 +93,10 @@
             <img src="../assets/images/allow-access-pic.png" alt="Allow Access Illustration" class="definition-image" />
         </div>
 
-        <!-- Rechter Definition Content -->
+        <!--
+        Right Side: Short Checklist + Reminder Block
+        You can easily swap out the paragraphs and image to match a different principle.
+        -->
         <div class="definition-right">
             <div class="definition-checklist">
                 <div class="ensure-heading">
@@ -124,9 +135,6 @@
             </div>
         </div>
     </section>
-
-
-
 
     <script src="../js/script.js"></script>
 </body>

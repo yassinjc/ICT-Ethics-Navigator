@@ -13,10 +13,13 @@
 </head>
 
 <body>
+    <!-- Background -->
     <div class="background-image"></div>
 
-    <!-- Navigatiebalk -->
+    <!-- Navigation Bar containing topics -->
     <nav class="top-nav">
+
+        <!-- Left column: First 3 Topics -->
         <div class="nav-column left-topics">
             <ul class="topic-links">
                 <a href="/pages/definition-autonomy.html">
@@ -31,8 +34,10 @@
             </ul>
         </div>
 
+        <!-- Center Column: Principle and Progress Bar -->
         <div class="nav-column center-principle">
             <span class="principle-name">Autonomy <i class="fa-solid fa-chevron-down"></i></span>
+
             <div class="progress-tracker">
                 <span>You've explored <span class="highlight blue">all topics!</span></span>
                 <div class="dots">
@@ -46,6 +51,7 @@
             </div>
         </div>
 
+        <!-- Right Column: Last 3 Topics -->
         <div class="nav-column right-topics">
             <ul class="topic-links">
                 <a href="/pages/documents-autonomy.html">
@@ -61,11 +67,17 @@
         </div>
     </nav>
 
-    <!-- Quiz Content -->
+    <!-- Contact-Us Button -->
+    <a href="/pages/contact.html" class="contact-button" title="Contact us">
+        <i class="fas fa-phone"></i>
+    </a>
+
+
+    <!-- Main Quiz Wrapper -->
     <div class="quiz-wrapper">
         <h1 class="quiz-title">Test Yourself</h1>
 
-        <!-- Progress bar -->
+        <!-- Progress bar for current question -->
         <div class="progress-wrapper">
             <div class="progress-indicator active" style="left: 25%;">25%</div>
             <div class="progress-bar">
@@ -73,8 +85,16 @@
             </div>
         </div>
 
-        <!-- Question -->
+        <!--
+        Questions content is fully customizable:
+        - Change the question text
+        - Update each answer option and its feedback
+        - Mark the correct answer with data-correct="true"
+        - Replace image if needed
+        -->
         <div class="quiz-question-block">
+
+            <!-- Left Side: Questions and Answers -->
             <div class="question-left">
                 <p class="quiz-question">
                     You need user emails for login purposes. <br>
@@ -82,40 +102,51 @@
                 </p>
 
                 <div class="quiz-options">
+
+                    <!-- Option A (incorrect) -->
                     <button class="quiz-option" data-correct="false">
                         <span class="letter">A</span>
                         <span class="option-text">Pre-fill the field and submit it when they click
                             “Next”.</span>
                     </button>
+
                     <div class="feedback-text" style="display: none;">
                         ❌ Not quite. Pre-filling and auto-submitting skips the user's right to choose — that's not informed consent.
                     </div>
 
+                    <!-- Option B (incorrect) -->
                     <button class="quiz-option" data-correct="false">
                         <span class="letter">B</span>
                         <span class="option-text">Collect them and store securely — no need to
                             explain.</span>
                     </button>
+
                     <div class="feedback-text" style="display: none;">
                         ❌ Almost. Storing data securely is great, but it's not enough — people need to know why and give permission first.
                     </div>
 
+                    <!-- Option C (correct) -->
                     <button class="quiz-option" data-correct="true">
                         <span class="letter">C</span>
                         <span class="option-text">Ask for consent and explain how the email will
                             be used.</span>
                     </button>
+
                     <div class="feedback-text" style="display: none;">
                         ✅ Correct! Asking for consent and explaining usage supports transparency and respects participant autonomy.
                     </div>
+
                 </div>
+                
             </div>
 
+            <!-- Right Side: Avatar Illustration -->
             <div class="question-right">
                 <img src="/assets/images/quiz-image.png" alt="quiz illustration" id="quiz-image">
             </div>
         </div>
 
+        <!-- Continue Button, appears after answering -->
         <div class="continue-wrapper" style="display: none;">
             <button class="continue-button">Continue</button>
         </div>

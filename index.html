@@ -12,65 +12,61 @@
 </head>
 
 <body>
-    <!-- Achtergrond -->
-    <div class="background-image">
+    <!-- Background -->
+    <div class="background-image"></div>
 
-        <!-- Introductiecontainer -->
-        <div class="intro-section">
+    <!-- Introduction Container -->
+    <div class="intro-section">
 
-            <!-- Introductietekst -->
-            <h1 class="intro-title">
-                Start Your <span class="highlighted-keywords">Ethical Journey</span>
-            </h1>
+        <!-- Introduction Title -->
+        <h1 class="intro-title">
+            Start Your <span class="highlighted-keywords">Ethical Journey</span>
+        </h1>
 
-            <!-- Subtekst die tijdelijk verschijnt -->
-            <p class="sub-intro-text">
-                Not sure where to begin?<br>
-                <strong>Don't worry</strong> — we'll guide you <span class="highlighted-keywords">step by step</span>.
+        <!-- Subtext that temporarily appears (Animated in Javascript) -->
+        <p class="sub-intro-text">
+            Not sure where to begin?<br>
+            <strong>Don't worry</strong> — we'll guide you <span class="highlighted-keywords">step by step</span>.
+        </p>
+
+        <!-- Dropdown section that appears after subtext fades -->
+        <div class="dropdown-section">
+            <p class="dropdown-intro">
+                Choose an <strong>ethical principle</strong> you want to <span
+                    class="highlighted-keywords">explore</span>.
             </p>
 
-            <!-- Dropdown die verschijnt nadat subtekst verdwijnt -->
-            <div class="dropdown-section">
-                <p class="dropdown-intro">
-                    Choose an <strong>ethical principle</strong> you want to <span
-                        class="highlighted-keywords">explore</span>.
-                </p>
-
-                <div class="custom-dropdown">
-                    <div class="dropdown-selected">
-                        <div class="dropdown-label">
-                            <span class="selected-text">Select a principle</span>
-                            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
-                        </div>
+            <!-- Dropdown containing Ethical Principles -->
+            <div class="custom-dropdown">
+                <div class="dropdown-selected">
+                    <div class="dropdown-label">
+                        <span class="selected-text">Select a principle</span>
+                        <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
                     </div>
-                    <ul class="dropdown-options">
-                        <li class="opt-purple">Autonomy</li>
-                        <li class="opt-blue">Justice</li>
-                        <li class="opt-green">Beneficence & Non-Maleficence</li>
-                        <li class="opt-red">Accountability & Transparency</li>
-                        <li class="opt-yellow">Confidentiality & Privacy</li>
-                    </ul>
                 </div>
-
-                <p class="dropdown-followup">
-                    Each one comes with clear <strong>examples</strong>, <strong>tips</strong>, and
-                    <strong>tools</strong> to help you <span class="highlighted-keywords">apply it in your
-                        project</span>.
-                </p>
-
-                <!-- Verstopte knop die zichtbaar wordt na selectie -->
-                <a href="pages/autonomy-explore.html" class="explore-button hidden">
-                    Start exploring this principle
-                    <i class="fa-solid fa-chevron-right chevron-right"></i>
-                </a>
-
+                <ul class="dropdown-options">
+                    <li class="opt-purple">Autonomy</li>
+                    <li class="opt-blue">Justice</li>
+                    <li class="opt-green">Beneficence & Non-Maleficence</li>
+                    <li class="opt-red">Accountability & Transparency</li>
+                    <li class="opt-yellow">Confidentiality & Privacy</li>
+                </ul>
             </div>
 
+            <!-- Supporting description, underneath the dropdown -->
+            <p class="dropdown-followup">
+                Each one comes with clear <strong>examples</strong>, <strong>tips</strong>, and
+                <strong>tools</strong> to help you <span class="highlighted-keywords">apply it in your
+                    project</span>.
+            </p>
 
+            <!-- "Explore"-button, becomes visible after a Principle is selected -->
+            <a href="pages/autonomy-explore.html" class="explore-button hidden">
+                Start exploring this principle
+                <i class="fa-solid fa-chevron-right chevron-right"></i>
+            </a>
 
         </div>
-
-
 
     </div>
 
