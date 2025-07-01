@@ -1,21 +1,7 @@
 // Confirms the script is successfully running
 console.log("script.js is geladen");
 
-
-// Intro Fade-In effect when the page loads
-window.addEventListener('DOMContentLoaded', () => {
-  const subText = document.querySelector('.sub-intro-text');
-  const introSection = document.querySelector('.intro-section');
-
-  // Waits 1.5 seconds before showing the subtext and pushing the intro upwards
-  setTimeout(() => {
-    subText.classList.add('visible');
-    introSection.classList.add('shift-down');
-  }, 1500);
-});
-
-
-// Extended intro animation with dropdown reveal
+// Intro animation with dropdown reveal
 window.addEventListener('DOMContentLoaded', () => {
   const subText = document.querySelector('.sub-intro-text');
   const introSection = document.querySelector('.intro-section');
@@ -25,17 +11,17 @@ window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     subText.classList.add('visible');
     introSection.classList.add('shift-down');
-  }, 1500);
+  }, 2000);
 
-  // Hides the subtext after 5 seconds
+  // Hides the subtext after 7 seconds
   setTimeout(() => {
     subText.classList.remove('visible');
-  }, 5000);
+  }, 7000);
 
-  // Reveals the dropdown section after 6 seconds
+  // Reveals the dropdown section after 8 seconds
   setTimeout(() => {
     dropdownSection.classList.add('visible');
-  }, 6000);
+  }, 8000);
 });
 
 
